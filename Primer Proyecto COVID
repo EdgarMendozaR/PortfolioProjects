@@ -44,7 +44,7 @@ where continent is not null
 group by location
 order by TotalDeaths desc
 
--- Let´s break things down by continent
+-- LetÂ´s break things down by continent
 select location, MAX(cast(total_deaths as int)) as TotalDeaths
 from PortfolioProject..CovidDeaths
 where continent is null 

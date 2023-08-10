@@ -19,7 +19,7 @@ add saleDateConverted Date;
 update NashvilleHousing
 set saleDateConverted = CONVERT(date,saledate)
 
-Select saleDateConverted, CONVERT(date, saledate) -- aca vemos que agregando una columna nueva y añadiendole los valores convertidos si pudimos crear la columna con el formato deseado
+Select saleDateConverted, CONVERT(date, saledate) -- aca vemos que agregando una columna nueva y aÃ±adiendole los valores convertidos si pudimos crear la columna con el formato deseado
 from PortfolioProject..NashvilleHousing 
  
 
@@ -65,7 +65,7 @@ SUBSTRING( PropertyAddress, 1, CHARINDEX( ',',PropertyAddress)-1) as Address,-- 
 SUBSTRING(PropertyAddress,CHARINDEX( ',',PropertyAddress)+1, len (propertyaddress))
 from NashvilleHousing
 
---Se crean dos nuevas columnas y se añaden los valores separados que hemos hallado de las diecciones
+--Se crean dos nuevas columnas y se aÃ±aden los valores separados que hemos hallado de las diecciones
 alter table nashvilleHousing
 add PropertySplitAddress nvarchar(255);
 
